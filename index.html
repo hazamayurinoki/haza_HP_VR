@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" conten="noindex,nofollow">
+  <meta name="description" content="これはHTMLCSSの課題作品です。"><!-- 被検索対象外 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ヴューポート-->
+  <meta name="description" content="online clamschool"><!--ディスクリプション-->
+  <title>DTO school</title>
+  <!--↓フォント変更予定↓-->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e9283efdba.js" crossorigin="anonymous"></script><!-- fontawesome -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="slick/" />
+  <style>
+    .page-header{
+      position: relative;
+      padding: 0;
+      max-width:100%;
+    }
+    h2.page-title {
+      position: absolute;
+      z-index: 2;
+      top: 77%;
+      left: 5%;
+      font-size: 3.5vw;
+      letter-spacing: 0.1em;
+      color:rgb(10, 153, 65);
+      font-weight: bolder;
+      text-shadow: 2px 2px 4px aqua;
+    }
+
+    .slick-slide img {
+      opacity: .8;
+      object-fit: cover;
+      /* object-position: top; */
+      object-position:0 -30px;
+      width: 100%;
+      height: 95vh;
+    }
+
+    .slider  {
+			width: 100%;
+			/* height: 90vh; */
+		}
+
+		.slider li {
+			width: 100%;
+			/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+		}
+
+    /* .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    } */
+  </style>
+</head>
+
+
+<body>
+  <!--ここからheaderまでは絶対触れない-->
+  <div id="splash">
+    <div id="splash_text"></div>
+    <div class="loader_cover loader_cover-up"></div><!--上に上がるエリア-->
+    <div class="loader_cover loader_cover-down"></div><!--下に下がるエリア-->
+    <!--/splash-->
+  </div>
+
+  <!--グローバルメニュー-->
+  <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
+  <nav id="g-nav">
+  <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+  <ul>
+  <li id="global-hovering"><a href="index.html">home</a></li> 
+  <li id="global-hovering"><a href="info.html">info</a></li> 
+  <li id="global-hovering"><a href="topic.html">topic</a></li> 
+  <li id="global-hovering"><a href="plan.html">plan</a></li> 
+  <li id="global-hovering"><a href="contact.html">contact</a></li> 
+  <li id="global-hovering"><a href="app.html">apps</a></li> 
+  <li id="global-hovering"><a href="avater.html">avater</a></li> 
+  <li id="global-hovering"><a href="meta.html">metaverse</a></li> 
+  <li id="global-hovering"><a href="elearning.html">learning</a></li> 
+  </ul>
+  </div>
+  </nav>
+
+  <header class="page-header wrapper">
+
+    <h2 class="page-title catch">
+      最先端の<ruby>技術武装<rt>テクノコート</rt></ruby>で新時代を制するのは <ruby>君<rt>キミ</rt></ruby>
+    </h2>
+
+    <ul class="slider">
+
+      <li><a href="#menu"><img src="images/sample1.jpg" alt="TOP PAGE IMAGE1"></a></li>
+      <li><a href="#menu"><img src="images/sample2.jpg" alt="TOP PAGE IMAGE2"></a></li>
+      <!-- 以下スライドショーを追加随時可能
+        <li><a href="#"><img src="images/03.jpg" alt="image03"></a></li>
+      <li><a href="#"><img src="images/04.jpg" alt="image04"></a></li>
+      <li><a href="#"><img src="images/05.jpg" alt="image05"></a></li>
+      <li><a href="#"><img src="images/06.jpg" alt="image06"></a></li>
+      <li><a href="#"><img src="images/07.jpg" alt="image07"></a></li>
+      <li><a href="#"><img src="images/08.jpg" alt="image08"></a></li> -->
+    </ul>
+    <!--サムネイル用
+       <ul class="thumb">
+      <li><a href="#"><img src="images/sample1.jpg" alt="TOP PAGE IMAGE1"></a></li>
+      <li><a href="#"><img src="images/sample2.jpg" alt="TOP PAGE IMAGE2"></a></li>
+      以下スライドショーを追加随時可能
+        <li><a href="#"><img src="images/03.jpg" alt="image03"></a></li>
+      <li><a href="#"><img src="images/04.jpg" alt="image04"></a></li>
+      <li><a href="#"><img src="images/05.jpg" alt="image05"></a></li>
+      <li><a href="#"><img src="images/06.jpg" alt="image06"></a></li>
+      <li><a href="#"><img src="images/07.jpg" alt="image07"></a></li>
+      <li><a href="#"><img src="images/08.jpg" alt="image08"></a></li>
+     </ul> -->
+  </header>
+  <!--ロゴ部WCBのやつになってるので
+	<div id="menu" class="big-bg">
+		<main class="page-main wrapper">
+			<h1>
+				<a href="index.html">
+					<img class="logo" src="images/logo.svg" alt="online logo">
+          <br>
+				</a>
+			</h1>-->
+  <!--＝＝＝＝＝＝＝画面ローディング用プログレスバー＝＝＝＝＝＝＝-->
+
+
+
+  <nav>
+    <ul class="main-nav gnavi">
+      <li><a href="info.html">Info</a></li>
+      <li><a href="topic.html">Topic</a></li>
+      <li><a href="plan.html">plan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="box-content wrapper">
+    <!-- <h2 class="page-title catch">最先端の
+      <ruby>技術武装<rt>テクノコート</rt></ruby>で新時代を制するのは <ruby>君<rt>キミ</rt></ruby>
+    </h2> -->
+    <!--太目の帯を日本語太字フォントで-->
+    <br>
+    <p>
+    <h2 class="catch2">解き放たれろ?未来の人材を創造する、高校生の為のonline塾『デクサス』がついに開講!!!</h2>
+    【 -Digital X-formation School- 】
+    </p>
+    <p>
+      <br>
+      <h3>
+        <a id="hovering" href="exam.html">※2025年度1月に実施される、共通一次試験の「情報Ⅰ」導入について</a>
+      </h3>
+    </p>
+
+  </div><!--/.menu-content -->
+
+  <!-- </div> -->
+
+  <div class="wrapper grid">
+    <div class="item"><!--item 横にクラスbig-boxは移動-->
+      <a class="btn" href="app.html"><img src="images/topic-sample1.jpg" alt="topic1">
+        <p>最新の技術と教育方法を存分に活用して、オンライン上で高品質でリーズナブルな教育体験を提供！最先端のオンライン教育を最前線で体験しよう。</p>
+        <!-- </img> -->
+      </a>
+    </div>
+    <div class="item">
+      <a class="btn" href="avater.html"><img src="images/topic-sample2.png" alt="topic2">
+        <p>好きなアバターで授業に参加！？より自由な形で自己表現を行い、様々な地域に住む他の生徒達とコミュニケーションを取りながら楽しく勉強しよう。</p>
+        <!-- </img> -->
+      </a>
+    </div>
+    <div class="item">
+      <a  class="btn" href="meta.html"><img src="images/topic-sample3.png" alt="topic3">
+        <p>さまざまな可能性を秘めたメタバース空間で、かつて不可能とされていたインタラクティブなオンライン授業を体験し、学習にイノベ―ションを起こそう。</p>
+        <!-- </img> -->
+      </a>
+    </div>
+    <div class="item">
+      <a class="btn" href="elearning.html"><img src="images/topic-sample4.png" alt="topic4">
+        <p>自習もばっちり、自分に合ったオリジナル教材と新傾向の出題に合わせた独自のe-learning学習素材でコストパフォーマンスを最大化しよう。</p>
+        <!-- </img> -->
+      </a>
+    </div>
+    <!--/タイル形式部分に関する.grid-->
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <p><small>&copy; 2023 online digital</small></p>
+    </div>
+  </footer>
+
+  <!--JQueryなど-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+  <!--JS-->
+  <script src="JS/script.js"></script>
+  <script src="JS/script2.js"></script>
+  <script src="slick/slick.min.js"></script>
+
+
+
+</body><!-- /#home -->
+
+</html>
