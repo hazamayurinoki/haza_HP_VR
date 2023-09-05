@@ -225,7 +225,7 @@ transition: all 0.6s;
   /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
-  top:50%;
+  top:60%;
   left:90%;
   transform: translate(-50%,-50%);
 }
@@ -240,7 +240,7 @@ list-style: none;
 #g-nav li a{
 color: #333;
 text-decoration: none;
-padding:10px;
+padding:8px;
 display: block;
 text-transform: uppercase;
 letter-spacing: 0.1em;
