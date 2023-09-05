@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Slick Playground</title>
+	<meta name="robots" conten="noindex,nofollow">
+  <meta name="description" content="これはHTMLCSSの課題作品です。"><!-- 被検索対象外 -->
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="./slick/slick.min.js"></script>
+	<script>
+		$(function () {
+			$('.slider').slick({
+				autoplay: true,
+				autoplaySpeed: 3000,
+				dots: true,
+				// slidesToShow: 2,
+				// slidesToScroll: 2,
+				infinite: true
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		/* chrome user agent stylesheet 40px */
+		ul.slider,ul.thumb{
+			padding-inline-start: 0;
+		}
+
+		.slider {
+			width: 50%;
+			margin: 100px auto;
+
+		}
+
+		.slick-slide {
+			margin: 0px 20px;
+		}
+
+		.slick-slide img {
+			width: 100%;
+		}
+
+		.slick-prev::before,
+		.slick-next::before {
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="slider">
+		<li><a href="#"><img src="images/4857880.jpg" alt="image01"></a></li>
+		<li><a href="#"><img src="images/4857906.jpg" alt="image02"></a></li>
+		<li><a href="#"><img src="images/sample1.jpg" alt="image03"></a></li>
+		<li><a href="#"><img src="images/sample2.jpg" alt="image04"></a></li>
+
+	</ul>
+
+</body>
+
+</html>
