@@ -21,7 +21,7 @@
 
 <body>
   <?php
-    require_once("../../lib/util.php");
+    require_once("lib/util.php");
     // 文字エンコードの検証
     if (!cken($_POST)) {
       $encoding = mb_internal_encoding();
@@ -46,7 +46,6 @@
         <li id="global-hovering"><a href="avater.html">avater</a></li>
         <li id="global-hovering"><a href="meta.html">metaverse</a></li>
         <li id="global-hovering"><a href="elearning.html">learning</a></li>
-        <li id="global-hovering"><a href="http://localhost/blog/wordpress/">blog</a></li>
       </ul>
     </div>
   </nav>
@@ -126,11 +125,13 @@
             <div class="note-online">
               <p>
                 ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。<br>
-                お手数ですが、お電話の前にお使いのパソコンの回線速度を下記からご確認ください。<br>
-                <a href="https://fast.com/ja/">■回線速度計測</a><br>
-              </p>
+                お手数ですが、お電話の前にお使いのパソコンの回線速度を下記からご確認ください。<br></p>
+            </div> <!-- classのline_velのセンター揃えのCSSコード効いてない stylecss参照-->
+            <h3><span class="line_vel"><a href="https://fast.com/ja/">【回線速度計測】</a></span></h3><br>
+            <div class="button-area">
+              <button id="submit-button" type="submit" value="送信" >上記の内容で申し込む</button>
             </div>
-
+          </form>
             <div class="note-location">
               <p>
                 【会場情報】<br>
@@ -147,10 +148,7 @@
                 width="640" height="480"></iframe>
             </div>
             <p>このマップはダミーです。</p>
-            <div class="button-area">
-              <button id="submit-button" type="submit" value="送信" >上記の内容で申し込む</button>
-            </div>
-          </form>
+            
           <div class="tohome">
             <h3>
               <p>

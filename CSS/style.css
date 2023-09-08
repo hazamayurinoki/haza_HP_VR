@@ -187,7 +187,6 @@ width: 100%;
 
 
 /*========= ナビゲーションのためのCSS ===============*/
-
 #g-nav{
   /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
   position:fixed;
@@ -201,189 +200,111 @@ background:#999;
   /*動き*/
 transition: all 0.6s;
 }
-
 /*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive{
   left: -80%;
   opacity: 0.9;
 }
-
-
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list{
   /*ナビの数が増えた場合縦スクロール*/
   position: fixed;
   z-index: 999; 
   width:100%;
-  height: 100vh;/*表示する高さ*/
+  height: 110vh;/*表示する高さ*/
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-
-/*ナビゲーション*/
-#g-nav ul {
-  /*ナビゲーション天地中央揃え*/
-  position: absolute;
-  z-index: 999;
-  top:60%;
-  left:90%;
-  transform: translate(-50%,-50%);
-}
-
-/*リストのレイアウト設定*/
-
-#g-nav li{
-list-style: none;
-  text-align: center; 
-}
-
-#g-nav li a{
-color: #333;
-text-decoration: none;
-padding:8px;
-display: block;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-font-weight: bold;
- }
-
-
-/*========= ナビゲーションのためのCSS ===============*/
-
-#g-nav{
-  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-  position:fixed;
-  z-index: 999;
-  /*ナビのスタート位置と形状*/
-top:0;
-  left: -120%;
-width:100%;
-  height: 100vh;/*ナビの高さ*/
-background:#999;
-  /*動き*/
-transition: all 0.6s;
-}
-
-/*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
-  left: -80%;
-  opacity: 0.9;
-}
-
-
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
-  /*ナビの数が増えた場合縦スクロール*/
-  position: fixed;
-  z-index: 999; 
-  width:100%;
-  height: 100vh;/*表示する高さ*/
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 /*ナビゲーション*/
 #g-nav ul {
   /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
   top:50%;
+  top:60%;
   left:90%;
   transform: translate(-50%,-50%);
 }
-
 /*リストのレイアウト設定*/
-
 #g-nav li{
 list-style: none;
-  text-align: center; 
+  text-align: center;
 }
-
 #g-nav li a{
 color: #333;
 text-decoration: none;
-padding:10px;
+padding:3%;
 display: block;
 text-transform: uppercase;
 letter-spacing: 0.1em;
 font-weight: bold;
  }
+ /*========= ボタンのためのCSS ===============*/
 
 
-/*========= ボタンのためのCSS ===============*/
-.openbtn{
-  position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-  top:12px;
-  left: 40px;
+.openbtn {
+  position: fixed;
+  z-index: 9999;
+  top: 12%;
+  left: 6%;
   cursor: pointer;
-    width: 100px;
-    height:100px;
-    border: #61b1d7 solid 1px;
-    border-radius: 20%;
-    background-color: #fbfbfb;
-    opacity: 0.6;
-  }
-
+  width: 75px;
+  height: 75px;
+  border: #61b1d7 solid 1px;
+  border-radius: 20%;
+  background-color: #fbfbfb;
+  opacity: 0.6;
+}
 
 /*×に変化*/
 .openbtn span{
-  display: inline-block;
-  transition: all .4s;
-  position: absolute;
-  left: 14px;
-  height: 10px;
-  border-radius: 2px;
+display: inline-block;
+transition: all .4s;
+position: absolute;
+left: 11px;
+height: 10px;
+border-radius: 2px;
 background-color: #666;
-  width: 70%;
-  background: linear-gradient(to right,#009944,#0068b7,#1d2088,#920783,#1d2088,#0068b7,#009944) 0 / 200%;
-  animation: 10s openbtn linear infinite; 
+width: 70%;
+background: linear-gradient(to right,#009944,#0068b7,#1d2088,#920783,#1d2088,#0068b7,#009944) 0 / 200%;
+animation: 10s openbtn linear infinite; 
 }
-
 /* .openbtn :active{
-  background: linear-gradient(to right,#009944,#0068b7,#1d2088,#920783) 0 / 200%;
-  animation: 5s openbtn linear infinite; 
+background: linear-gradient(to right,#009944,#0068b7,#1d2088,#920783) 0 / 200%;
+animation: 5s openbtn linear infinite; 
 } linear-gradientの()の中身虹色verto right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783,#e60000 animation time 0.5s */
 @keyframes openbtn{
-  100% { background-position: 200%; }
+100% { background-position: 200%; }
 }
-
 .openbtn .openbtn-area{
-  transition: all .4s;
+transition: all .4s;
 }
-
 .openbtn span:nth-of-type(1) {
-top: 20px;	
+top: 12px;
 }
-
 .openbtn span:nth-of-type(2) {
-top:45px;
+top:33px;
 }
-
 .openbtn span:nth-of-type(3) {
-top:70px;
+top:54px;
 }
-
 .openbtn.active .openbtn-area{
-	transform: rotateY(-360deg);
+transform: rotateY(-360deg);
 }
-
 .openbtn.active span:nth-of-type(1) {
-  top: 39px;
-  left: 9px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 80%;
+top: 28px;
+left: 8px;
+transform: translateY(6px) rotate(-45deg);
+width: 80%;
 }
-
 .openbtn.active span:nth-of-type(2) {
 opacity: 0;
 }
-
 .openbtn.active span:nth-of-type(3){
-  top: 51px;
-  left: 9px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 80%;
+top: 41px;
+left: 9px;
+transform: translateY(-6px) rotate(45deg);
+width: 80%;
 }
 /*========= レイアウトのためのCSS ===============*/
 
@@ -511,7 +432,7 @@ footer p {
 article {
   width: 74%;
   order: 2;
-  font-size:2em;
+  font-size:1em;
   margin: 10px;
 }
 
@@ -632,6 +553,12 @@ aside p {
   color: #0bd;
 }
 
+.sub-memu-blog a{
+  font-size: larger;
+}
+.sub-memu-blog a:hover{
+  color: #0bd;
+}
 /*ad
 -----------------------*/
 /*ad {
@@ -753,7 +680,8 @@ aside p {
 
 .pict img {
   width: 100%;
-  height:auto;
+   height: 300px;
+   object-fit: cover;
 }
 
 .box:nth-child(even) {
@@ -771,6 +699,9 @@ aside p {
 #contact{
   background-image: url(../images/contact-bg.jpg);
   min-height: 100vh;
+}
+span.line_vel{
+  text-align: center;
 }
 /*top画像のホバー事項の各調整
 -----------------------*/
